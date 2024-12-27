@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<style>
+    .afacad-flux-mahi {
+  font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.afacad-flux-m {
+  font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+</style>
+</head>
+<body class="afacad-flux-mahi">
+    <marquee class="afacad-flux-m bg-blue-400 text-6xl rounded-lg">WELCOME TO PAGE LAYOUIT TUTORIAL</marquee>
+    <h1 class="text-center text-4xl mb-2">Page Layout</h1>
+    <h2 class="text-xl mb-1">01 Equal Layout</h2>
+    <h2 class="text-xl mb-1">2 Cols_Layout</h2>
+    <div class="grid gap-1 p-1 sm:grid-cols-2">
+        <div class="bg-pink-300 min-h-[100px] rounded-lg flex justify-center items-center">Div-1</div>
+        <div class="bg-purple-300 min-h-[100px] rounded-lg flex justify-center items-center">Div-2</div>
+    </div>
+    <h2 class="text-xl">3 Cols Layout</h2>
+    <div class="grid gap-1 p-1 sm:grid-cols-3">
+        <div class="bg-pink-300 min-h-[100px] rounded-lg flex justify-center items-center">Div-1</div>
+        <div class="bg-purple-300 min-h-[100px] rounded-lg flex justify-center items-center">Div-2</div>
+        <div class="bg-pink-300 min-h-[100px] rounded-lg flex justify-center items-center">Div-3</div>
+    </div>
+    <h2 class="text-xl mb-1">02 Non-Equal Layout</h2>
+    <h2>2 Cols_Layout</h2>
+    <div class="grid gap-1 p-1  sm:grid-cols-12">
+        <div class="bg-pink-300 min-h-[100px] rounded-lg sm:col-span-2 flex justify-center items-center">Div-1</div>
+        <div class="bg-purple-300 min-h-[100px] rounded-lg sm:col-span-10 flex justify-center items-center">Div-2</div>
+    </div>
+    <h2 class="text-xl mb-1">3 Cols_Layout Hidden using Block</h2>
+    <div class="grid gap-1 p-1 sm:grid-cols-12">
+        <div class="bg-pink-300 sm:col-span-2  sm:block hidden min-h-[100px] flex justify-center items-center">Div-1</div>
+        <div class="bg-purple-300 sm:col-span-8 min-h-[100px] flex justify-center items-center">Div-2</div>
+        <div class="bg-pink-300 sm:col-span-2 sm:block hidden min-h-[100px] flex justify-center items-center">Div-3</div>
+    </div>
+    <h2 class="text-xl mb-1">3 Cols_Layout  Hide contents as we change display size</h2>
+    <div class="grid gap-1 p-1 sm:grid-cols-12">
+        <div class="bg-pink-300 sm:col-span-2 sm:block hidden min-h-[100px] flex justify-center items-center">Div-1</div>
+        <div class="bg-purple-300 md:col-span-8 sm:col-span-10 min-h-[100px] flex justify-center items-center">Div-2</div>
+        <div class="bg-pink-300 sm:col-span-2 md:block hidden min-h-[100px] flex justify-center items-center">Div-3</div>
+    </div>
+</body>
+</html>
